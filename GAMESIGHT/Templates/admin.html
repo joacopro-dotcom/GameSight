@@ -1,0 +1,854 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GameSight Analytics</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/admin.css' %}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            ◉
+        </div>
+
+        <div class="brand-text">
+
+            <strong>
+                GameSight
+            </strong>
+
+            <small>
+                Data-driven game insights
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- MENÚ PRINCIPAL -->
+
+    <div class="menu-section">
+
+        <span class="section-title">
+            PRINCIPAL
+        </span>
+
+
+        <a
+            href="#"
+            class="menu-item active"
+        >
+            <span>⌂</span>
+            Inicio
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item"
+        >
+            <span>🎮</span>
+            Mi videojuego
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item"
+        >
+            <span>◈</span>
+            Explorar
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item"
+        >
+            <span>⌁</span>
+            Análisis
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item"
+        >
+            <span>♧</span>
+            Comparaciones
+        </a>
+
+    </div>
+
+
+    <!-- ADMINISTRADOR -->
+
+    <div class="menu-section">
+
+        <span class="section-title">
+            ADMINISTRADOR
+        </span>
+
+
+        <a
+            href="#"
+            class="menu-item purple active"
+        >
+            <span>▦</span>
+            Overview
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item purple"
+        >
+            <span>▤</span>
+            Dataset
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item purple"
+        >
+            <span>◉</span>
+            Métricas
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item purple"
+        >
+            <span>◈</span>
+            Videojuegos
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item purple"
+        >
+            <span>♙</span>
+            Usuarios
+        </a>
+
+
+        <a
+            href="#"
+            class="menu-item purple"
+        >
+            <span>⚙</span>
+            Configuración
+        </a>
+
+    </div>
+
+
+    <!-- USUARIO -->
+
+    <div class="user">
+
+        <div class="avatar">
+            AG
+        </div>
+
+        <div>
+
+            <strong>
+                Alex García
+            </strong>
+
+            <small>
+                Desarrollador
+            </small>
+
+        </div>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- =====================================================
+     CONTENIDO PRINCIPAL
+===================================================== -->
+
+<main class="main">
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+
+        <div>
+
+            <h1>
+                GameSight Analytics
+            </h1>
+
+            <p>
+                Vista general del dataset y comportamiento
+                de los videojuegos analizados.
+            </p>
+
+        </div>
+
+
+        <div class="top-actions">
+
+            <span class="notification">
+                ◌
+            </span>
+
+            <span class="notification">
+                ♧
+            </span>
+
+
+            <div class="top-avatar">
+                AG
+            </div>
+
+
+            <div class="top-user">
+
+                <strong>
+                    Alex García
+                </strong>
+
+                <small>
+                    Desarrollador
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+         TABS
+    ================================================= -->
+
+    <div class="tabs">
+
+
+        <button class="tab active">
+            Dashboard
+        </button>
+
+
+        <button class="tab">
+            Análisis
+        </button>
+
+
+        <button class="tab">
+            Datos
+        </button>
+
+
+        <button class="tab">
+            Configuración
+        </button>
+
+
+        <div class="dataset-status">
+
+            <span></span>
+
+            Admin · Dataset actualizado
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         ESTADÍSTICAS
+    ================================================= -->
+
+    <section class="stats">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🎮
+            </div>
+
+            <strong>
+                15.000
+            </strong>
+
+            <small>
+                Videojuegos analizados
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📊
+            </div>
+
+            <strong>
+                43
+            </strong>
+
+            <small>
+                Variables del dataset
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⭐
+            </div>
+
+            <strong class="green">
+                7.4/10
+            </strong>
+
+            <small>
+                Rating promedio
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔥
+            </div>
+
+            <strong class="orange">
+                62.3
+            </strong>
+
+            <small>
+                Popularity promedio
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⚡
+            </div>
+
+            <strong class="cyan">
+                58.7
+            </strong>
+
+            <small>
+                Engagement promedio
+            </small>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         FILTROS
+    ================================================= -->
+
+    <section class="filters">
+
+
+        <h3>
+            FILTROS GLOBALES
+        </h3>
+
+
+        <div class="filter-row">
+
+
+            <div class="filter">
+
+                <label>
+                    Año
+                </label>
+
+                <select>
+
+                    <option>
+                        Todos
+                    </option>
+
+                    <option>
+                        2025
+                    </option>
+
+                    <option>
+                        2024
+                    </option>
+
+                    <option>
+                        2023
+                    </option>
+
+                    <option>
+                        2022
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter">
+
+                <label>
+                    Género
+                </label>
+
+                <select>
+
+                    <option>
+                        Todos
+                    </option>
+
+                    <option>
+                        Action
+                    </option>
+
+                    <option>
+                        Adventure
+                    </option>
+
+                    <option>
+                        RPG
+                    </option>
+
+                    <option>
+                        Strategy
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter">
+
+                <label>
+                    Plataforma
+                </label>
+
+                <select>
+
+                    <option>
+                        Todas
+                    </option>
+
+                    <option>
+                        PC
+                    </option>
+
+                    <option>
+                        PlayStation
+                    </option>
+
+                    <option>
+                        Xbox
+                    </option>
+
+                    <option>
+                        Nintendo Switch
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter">
+
+                <label>
+                    Rating
+                </label>
+
+                <select>
+
+                    <option>
+                        Todos
+                    </option>
+
+                    <option>
+                        8+
+                    </option>
+
+                    <option>
+                        7+
+                    </option>
+
+                    <option>
+                        6+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter">
+
+                <label>
+                    Popularidad
+                </label>
+
+                <select>
+
+                    <option>
+                        Todos
+                    </option>
+
+                    <option>
+                        Alta
+                    </option>
+
+                    <option>
+                        Media
+                    </option>
+
+                    <option>
+                        Baja
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button class="apply">
+                Aplicar filtros
+            </button>
+
+
+            <button class="reset">
+                Restablecer
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         GRÁFICOS
+    ================================================= -->
+
+    <section class="charts">
+
+
+        <!-- GRÁFICO GÉNEROS -->
+
+        <div class="chart-card">
+
+
+            <div class="chart-header">
+
+                <h3>
+                    Videojuegos por género
+                </h3>
+
+                <p>
+                    Top 10 géneros más representados
+                </p>
+
+            </div>
+
+
+            <div class="bar-chart">
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Indie
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            style="width: 95%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Adventure
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            style="width: 70%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Action
+                    </span>
+
+                    <div class="bar purple-bar">
+
+                        <i
+                            style="width: 63%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        RPG
+                    </span>
+
+                    <div class="bar purple-bar">
+
+                        <i
+                            style="width: 50%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Platformer
+                    </span>
+
+                    <div class="bar dark-blue">
+
+                        <i
+                            style="width: 42%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Strategy
+                    </span>
+
+                    <div class="bar dark-blue">
+
+                        <i
+                            style="width: 35%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- GRÁFICO PLATAFORMAS -->
+
+        <div class="chart-card">
+
+
+            <div class="chart-header">
+
+                <h3>
+                    Videojuegos por plataforma
+                </h3>
+
+                <p>
+                    Distribución de títulos según plataforma
+                </p>
+
+            </div>
+
+
+            <div class="bar-chart">
+
+
+                <div class="bar-row">
+
+                    <span>
+                        PC
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            class="cyan-bar"
+                            style="width: 95%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        PlayStation 4/5
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            class="cyan-bar"
+                            style="width: 68%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Xbox
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            class="cyan-bar"
+                            style="width: 50%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Nintendo Switch
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            class="cyan-bar"
+                            style="width: 38%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bar-row">
+
+                    <span>
+                        Mobile
+                    </span>
+
+                    <div class="bar">
+
+                        <i
+                            class="cyan-bar"
+                            style="width: 30%;"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+</body>
+
+</html>

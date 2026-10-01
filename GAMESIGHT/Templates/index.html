@@ -1,0 +1,141 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GameSight</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                ◉
+            </span>
+
+            GameSight
+
+        </div>
+
+
+        <div class="nav-right">
+
+    <a
+        href="{% url 'dashboard' %}"
+        target="_blank"
+        class="admin-link"
+    >
+        Admin
+    </a>
+
+    <button>
+        Analizar mi videojuego
+    </button>
+
+</div>
+
+    </nav>
+
+
+    <main>
+
+        <div class="badge">
+            ✦ 15k+ videojuegos analizados · 43 variables
+        </div>
+
+
+        <h1>
+
+            Descubre qué características
+
+            <span>
+                se relacionan
+            </span>
+
+            con el éxito de un videojuego
+
+        </h1>
+
+
+        <p class="description">
+
+            GameSight transforma datos de miles de videojuegos
+            en información visual para ayudarte a tomar mejores
+            decisiones durante el desarrollo de tu próximo proyecto.
+
+        </p>
+
+
+        <div class="actions">
+
+            <button class="primary">
+                Analizar mi videojuego
+            </button>
+
+            <button class="secondary">
+                Explorar datos →
+            </button>
+
+        </div>
+
+
+        <div class="dashboard">
+
+            <div class="window-bar">
+
+                <i></i>
+                <i></i>
+                <i></i>
+
+                <span>
+                    gamesight — análisis comparativo
+                </span>
+
+            </div>
+
+
+            <div class="chart">
+
+                <b style="left: 5%; bottom: 25%;"></b>
+                <b style="left: 10%; bottom: 40%;"></b>
+                <b style="left: 15%; bottom: 30%;"></b>
+                <b style="left: 20%; bottom: 55%;"></b>
+                <b style="left: 25%; bottom: 35%;"></b>
+                <b style="left: 30%; bottom: 70%;"></b>
+                <b style="left: 35%; bottom: 45%;"></b>
+                <b style="left: 40%; bottom: 65%;"></b>
+                <b style="left: 45%; bottom: 30%;"></b>
+                <b style="left: 50%; bottom: 75%;"></b>
+                <b style="left: 55%; bottom: 50%;"></b>
+                <b style="left: 60%; bottom: 35%;"></b>
+                <b style="left: 65%; bottom: 65%;"></b>
+                <b style="left: 70%; bottom: 45%;"></b>
+                <b style="left: 75%; bottom: 70%;"></b>
+                <b style="left: 80%; bottom: 55%;"></b>
+                <b style="left: 85%; bottom: 75%;"></b>
+                <b style="left: 90%; bottom: 60%;"></b>
+                <b style="left: 95%; bottom: 72%;"></b>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
